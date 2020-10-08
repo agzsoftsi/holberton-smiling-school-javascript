@@ -1,0 +1,370 @@
+/* Style Sheet */
+
+/****************** Base Styles *******************/
+* {
+	font-family: 'Source Sans Pro' !important;
+}
+/****************** Header Styles *******************/
+header {
+	background-image: url("images/pic_1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+header#pricing-page, header#courses-page {
+	background-image: url("images/pic_2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+header#pricing-page h1 {
+	letter-spacing: 0.1rem;
+}
+
+header#pricing-page svg {
+	fill: #82d24f;
+}
+
+header#pricing-page .logo-words-pricing {
+	width: auto;
+	height: auto;
+	position: relative;
+	top: 5px;
+}
+
+header#pricing-page .badge {
+	max-width: 200px;
+	width: 90%;
+
+}
+
+@media (max-width: 1200px) {
+	header {
+		background-position: 50% 50%;
+	}
+
+	.pros img {
+		width: 75% !important;
+		height: auto;
+	}
+
+
+}
+
+.logo-smile {
+	width: auto;
+	height: 30px;
+}
+
+.logo-words {
+	width: auto;
+	height: 30px;
+}
+
+/****************** Header - Nav & hero Styles *******************/
+.nav-item {
+	font-size: 12px !important;
+}
+
+.hero-title {
+	letter-spacing: 0.2rem;
+	white-space: pre;
+}
+
+.hero-content {
+	margin-top: 6rem;
+}
+
+.btn {
+	background-color: #c271ff !important;
+	border-color: #c271ff !important;
+	transition: opacity 0.25s ease;
+	font-size: 14px;
+}
+
+.btn:hover, .btn:active {
+	background-color: #c271ff !important;
+	border-color: #c271ff !important;
+	opacity: 0.9;
+}
+
+.pros-section {
+	margin-top: 8rem;
+}
+
+.learn {
+	color: #c271ff;
+}
+
+.pros {
+	margin: 5rem 0;
+}
+
+.pros img {
+	width: 75% !important;
+	height: auto;
+}
+
+#nav-menu-btn {
+	background-color: white;
+	width: 13px;
+	height: 2px;
+	position: absolute;
+	top: 3rem;
+}
+
+#nav-menu-btn::before {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 2px;
+	background-color: white;
+	position: relative;
+	top: -0.5rem;
+}
+
+#nav-menu-btn::after {
+	content: "";
+	display: block;
+	width: 18px;
+	height: 2px;
+	background-color: white;
+	position: relative;
+	top: 0.4rem;
+}
+
+@media (max-width: 375px) {
+	header#pricing-page .logo-words-pricing {
+		width: 120px;
+	}
+
+	header#pricing-page h1{
+		font-size: 1.5rem;
+	}
+
+	header#pricing-page h1 .logo-smile{
+		width: 35px;
+		vertical-align: middle;
+	}
+
+	header#pricing-page #go{
+		font-size: 4rem;
+	}
+
+
+}
+
+@media (max-width: 576px) {
+	header {
+		background-position: 45% 50%;
+	}
+
+	.header-nav {
+		max-height: 0px;
+		overflow: hidden;
+		transition: max-height 0.5s ease-in-out;
+	}
+	
+	#nav-toggle:checked ~ .header-nav {
+		max-height: 100vh;
+		overflow: hidden;
+	}
+
+	.display-1 {
+		font-size: 4rem;
+	}
+
+
+	.hero-title {
+		letter-spacing: 0.1rem;
+	}
+
+	.pros .h5 {
+		font-size: 1.1rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.pros p {
+		font-size: 0.9rem;
+	}
+}
+
+/****************** Section - testimonials & carousel & Video Styles *******************/
+
+.testimonials {
+	background-color: #c271ff;
+}
+
+#testimonial-carousel .carousel-item {
+	width: 100%;
+	height: 300px;
+	background-color: #c271ff;
+}
+
+#testimonial-carousel .carousel-item img {
+	width: 20%;
+	margin-left: 15%;
+}
+
+#testimonial-carousel .carousel-item .testimonial-text {
+	margin-left: 2rem;
+	width: 50%;
+}
+
+.video-duration {
+	font-size: 14px;
+}
+
+.card {
+	border-color: transparent !important;
+}
+
+@media (max-width: 768px) {
+	#popular-carousel .carousel-inner .carousel-item > div,	#latest-carousel .carousel-inner .carousel-item > div {
+			display: none;
+	}
+	#popular-carousel .carousel-inner .carousel-item > div:first-child,	#latest-carousel .carousel-inner .carousel-item > div:first-child {
+			display: block;
+	}
+}
+
+#popular-carousel .carousel-inner .carousel-item.active,#popular-carousel .carousel-inner .carousel-item-next,
+#popular-carousel .carousel-inner .carousel-item-prev,#latest-carousel .carousel-inner .carousel-item.active,
+#latest-carousel .carousel-inner .carousel-item-next,#latest-carousel .carousel-inner .carousel-item-prev {
+	display: flex;
+}
+
+
+.video {
+	position: relative;
+}
+
+.play-btn {
+	width: 20%;
+	height: auto;
+	position: absolute;
+	left: 40%;
+	top: 36%;
+}
+
+.tutorial-author img {
+	width: 15%;
+}
+
+.tutorial-author span, .tutorial-info span {
+	color: #c271ff;
+}
+
+.tutorial-info .rating img {
+	width: 10%;
+}
+
+.membership-section img {
+	width: 45px;
+}
+
+/****************** Footer - nav & social Styles *******************/
+
+footer, .membership { /*V*/
+	background-color: #071629 !important;
+}
+
+.social > svg { /*V*/
+	fill: white !important;
+	
+  }
+
+
+.font-coiny {
+	font-family: "Coiny" !important;
+}
+
+.bg-purple { 
+	background-color: #c271ff;
+}
+
+#keywords {
+	border-left: none;
+}
+
+#search-filters svg {
+	fill: white;
+}
+
+input, .input-group, .input-group-text, select {
+	border-radius: 0 !important;
+	border-top: none !important;
+	border-right: none !important;
+	border-left: none !important;
+	border-color: white !important;
+	background-color: rgb(255, 255, 255, 0.2) !important;
+	color: #efefef !important;
+}
+
+.input-group-text {
+	position: relative;
+	right: 1px;
+}
+
+input::placeholder {
+	color: #efefef !important;
+}
+
+#loginModal input::placeholder { /*V*/
+	color:  #c271ff !important;
+	opacity: 0.5;
+}
+
+#loginModal input, #loginModal input:focus { /*V*/
+	color:  darkslateblue!important;
+	border: #e8caff solid 1px !important;
+}
+
+#loginModal input:hover { /*V*/
+		border: #c271ff solid 1px !important;
+}
+select option {
+	color: black;
+	margin-top: 1rem;
+}
+
+#popular-carousel .carousel-control-prev, #latest-carousel .carousel-control-prev {
+	position: absolute;
+	left: -2rem;
+}
+
+#popular-carousel .carousel-control-next, #latest-carousel .carousel-control-next {
+	position: absolute;
+	right: -2rem;
+}
+
+.loader-wrapper {
+	padding: 3rem;
+}
+
+.loader {
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	animation: spin 2s linear infinite;
+	margin: auto;
+}
+
+.loader-bg-purple {
+	border: 10px solid #f3f3f3;
+	border-top: 10px solid #C271FF;
+	
+}
+
+.loader-bg-white {
+	border: 10px solid #c271ff;
+	border-top: 10px solid #f3f2f3;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+
