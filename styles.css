@@ -1,10 +1,13 @@
-/* Style Sheet */
+/** Styles */
 
-/****************** Base Styles *******************/
 * {
 	font-family: 'Source Sans Pro' !important;
 }
-/****************** Header Styles *******************/
+
+.bg-section{
+	background-color: #071629 !important;
+}
+
 header {
 	background-image: url("images/pic_1.jpg");
 	background-repeat: no-repeat;
@@ -32,12 +35,6 @@ header#pricing-page .logo-words-pricing {
 	top: 5px;
 }
 
-header#pricing-page .badge {
-	max-width: 200px;
-	width: 90%;
-
-}
-
 @media (max-width: 1200px) {
 	header {
 		background-position: 50% 50%;
@@ -47,8 +44,6 @@ header#pricing-page .badge {
 		width: 75% !important;
 		height: auto;
 	}
-
-
 }
 
 .logo-smile {
@@ -61,7 +56,6 @@ header#pricing-page .badge {
 	height: 30px;
 }
 
-/****************** Header - Nav & hero Styles *******************/
 .nav-item {
 	font-size: 12px !important;
 }
@@ -133,27 +127,6 @@ header#pricing-page .badge {
 	top: 0.4rem;
 }
 
-@media (max-width: 375px) {
-	header#pricing-page .logo-words-pricing {
-		width: 120px;
-	}
-
-	header#pricing-page h1{
-		font-size: 1.5rem;
-	}
-
-	header#pricing-page h1 .logo-smile{
-		width: 35px;
-		vertical-align: middle;
-	}
-
-	header#pricing-page #go{
-		font-size: 4rem;
-	}
-
-
-}
-
 @media (max-width: 576px) {
 	header {
 		background-position: 45% 50%;
@@ -174,7 +147,6 @@ header#pricing-page .badge {
 		font-size: 4rem;
 	}
 
-
 	.hero-title {
 		letter-spacing: 0.1rem;
 	}
@@ -189,8 +161,6 @@ header#pricing-page .badge {
 		font-size: 0.9rem;
 	}
 }
-
-/****************** Section - testimonials & carousel & Video Styles *******************/
 
 .testimonials {
 	background-color: #c271ff;
@@ -229,12 +199,30 @@ header#pricing-page .badge {
 	}
 }
 
-#popular-carousel .carousel-inner .carousel-item.active,#popular-carousel .carousel-inner .carousel-item-next,
-#popular-carousel .carousel-inner .carousel-item-prev,#latest-carousel .carousel-inner .carousel-item.active,
-#latest-carousel .carousel-inner .carousel-item-next,#latest-carousel .carousel-inner .carousel-item-prev {
+#popular-carousel .carousel-inner .carousel-item.active, #popular-carousel .carousel-inner .carousel-item-next,
+#popular-carousel .carousel-inner .carousel-item-prev, #latest-carousel .carousel-inner .carousel-item.active,
+#latest-carousel .carousel-inner .carousel-item-next, #latest-carousel .carousel-inner .carousel-item-prev {
 	display: flex;
 }
 
+/* display 3 */
+@media (min-width: 768px) {
+	
+	#popular-carousel .carousel-inner .carousel-item-right.active,	#popular-carousel .carousel-inner .carousel-item-next,
+	#latest-carousel .carousel-inner .carousel-item-right.active,	#latest-carousel .carousel-inner .carousel-item-next {
+		transform: translateX(25%);
+	}
+	
+	#popular-carousel .carousel-inner .carousel-item-left.active, #popular-carousel .carousel-inner .carousel-item-prev,
+	#latest-carousel .carousel-inner .carousel-item-left.active, #latest-carousel .carousel-inner .carousel-item-prev {
+		transform: translateX(-25%);
+	}
+}
+
+#popular-carousel .carousel-inner .carousel-item-right, #popular-carousel .carousel-inner .carousel-item-left,
+#latest-carousel .carousel-inner .carousel-item-right, #latest-carousel .carousel-inner .carousel-item-left { 
+transform: translateX(0);
+}
 
 .video {
 	position: relative;
@@ -261,26 +249,23 @@ header#pricing-page .badge {
 }
 
 .membership-section img {
-	width: 45px;
+	width: 80px;
 }
 
-/****************** Footer - nav & social Styles *******************/
-
-footer, .membership { /*V*/
-	background-color: #071629 !important;
+.social-nav {
+	max-width: 40%;
 }
 
-.social > svg { /*V*/
+.social {
+	margin: 0.5rem;
 	fill: white !important;
-	
-  }
-
+}
 
 .font-coiny {
 	font-family: "Coiny" !important;
 }
 
-.bg-purple { 
+.bg-purple {
 	background-color: #c271ff;
 }
 
@@ -311,19 +296,6 @@ input::placeholder {
 	color: #efefef !important;
 }
 
-#loginModal input::placeholder { /*V*/
-	color:  #c271ff !important;
-	opacity: 0.5;
-}
-
-#loginModal input, #loginModal input:focus { /*V*/
-	color:  darkslateblue!important;
-	border: #e8caff solid 1px !important;
-}
-
-#loginModal input:hover { /*V*/
-		border: #c271ff solid 1px !important;
-}
 select option {
 	color: black;
 	margin-top: 1rem;
@@ -366,5 +338,3 @@ select option {
 	0% { transform: rotate(0deg); }
 	100% { transform: rotate(360deg); }
 }
-
-
