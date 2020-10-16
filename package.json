@@ -1,0 +1,24 @@
+{
+  "name": "clear",
+  "version": "1.0.0",
+  "description": "Build a web app in JavaScript",
+  "main": "homepage.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agzsoftsi/holberton-smiling-school-javascript.git"
+  },
+  "author": "Carlos Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agzsoftsi/holberton-smiling-school-javascript/issues"
+  },
+  "homepage": "https://github.com/agzsoftsi/holberton-smiling-school-javascript#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+
+}
