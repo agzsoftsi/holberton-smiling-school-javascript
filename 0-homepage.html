@@ -12,12 +12,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
 
-	<!-- JQuery, Bootstrap, popper and Custom Scripts -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="scripts.js"></script>
-
 	<!-- Bootstrap and Custom CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles.css">
@@ -27,6 +21,7 @@
 
 <body>
 <div class="container-fluid p-0">
+
 	<!-- Header -->
 	<header class="container-fluid p-4">
 		<nav class="container d-flex p-3 justify-content-between align-items-sm-center flex-sm-row flex-column position-relative">
@@ -90,63 +85,73 @@
 			</div>
 		</div>
 	</header>
-	<main class="container-fluid p-0">
-		<!-- Testimonials -->
-		<div class="container-fluid p-0 testimonials">
-			<section id="carousel-section" class="text-white container-fluid">
 
-                <div id="CarouselControls" class="carousel slide pt-5"  data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="container-fluid">
-                                <div class="row justify-content-center align-items-center pb-5 pl-1 pr-1">
-                                    <div class="col-sm-1">
-                                    </div>
-                                    <div class="col-auto">
-                                        <img class="rounded-circle circle-thumb" src="images/profile_5.jpg" alt="First slide" width="160px" height="auto">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <p class="h5 ml-1 mr-1 mt-4">&lsaquo;&lsaquo;Those tutorials are concise and go straight to the point. I can't think of a better place to learn smiling. And it's so fun!&rsaquo;&rsaquo;</p>
-                                        <p class="font-weight-bold">Person Name</p>
-                                        <p class="font-italic">weather presenter</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="container-fluid">
-                                <div class="row justify-content-center align-items-center pb-5 pl-1 pr-1">
-                                    <div class="col-sm-1">
-                                    </div>
-                                    <div class="col-auto">
-                                        <img class="rounded-circle circle-thumb" src="images/profile_5.jpg" alt="First slide" width="160px" height="auto">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <p class="h5 ml-1 mr-1 mt-4">&lsaquo;&lsaquo;Those tutorials are concise and go straight to the point. I can't think of a better place to learn smiling. And it's so fun!&rsaquo;&rsaquo;</p>
-                                        <p class="font-weight-bold">Person Name</p>
-                                        <p class="font-italic">weather presenter</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#CarouselControls" role="button" data-slide="prev">
-                            <img src="images/arrow_white_left.png" aria-hidden="true" width="20"/>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#CarouselControls" role="button" data-slide="next">
-                            <img src="images/arrow_white_right.png" aria-hidden="true" width="20"/>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-            </section>
+
+
+	<main class="container-fluid p-0">
+		<!-- Section Testimonials -->
+		<div class="container-fluid p-0 testimonials">
+			<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div id="testimonial-carousel" class="carousel slide w-100" data-ride="carousel">
+								<!-- Carousel slides -->
+								<div class="carousel-inner w-100" role="listbox">
+									<div class="carousel-item active">
+											<div class="row align-items-center pt-5">
+												<img src="images/profile_5.jpg" alt="Person Name Avatar" class="rounded-circle">
+												<div class="text-white testimonial-text">
+													<h4>&lsaquo;&lsaquo; Those tutorials are concise and go straight to the point. I can't think of a better place to learn smiling. And it's so fun!</h4>
+													<p class="font-weight-bold">Person Name</p>
+													<p class="font-italic">weather presenter</p>
+												</div>
+											</div>
+									</div>
+									<div class="carousel-item">
+										<div class="d-flex align-items-center pt-5">
+											<img src="images/profile_5.jpg" alt="Person Name Avatar" class="rounded-circle">
+											<div class="text-white testimonial-text">
+												<h4>&lsaquo;&lsaquo; Those tutorials are concise and go straight to the point. I can't think of a better place to learn smiling. And it's so fun!</h4>
+												<p class="font-weight-bold">Person Name</p>
+												<p class="font-italic">weather presenter</p>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="d-flex align-items-center pt-5">
+											<img src="images/profile_5.jpg" alt="Person Name Avatar" class="rounded-circle">
+											<div class="text-white testimonial-text">
+												<h4>&lsaquo;&lsaquo; Those tutorials are concise and go straight to the point. I can't think of a better place to learn smiling. And it's so fun!</h4>
+												<p class="font-weight-bold">Person Name</p>
+												<p class="font-italic">weather presenter</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Carousel controls -->
+								<a href="#testimonial-carousel" class="carousel-control-prev" role="button" data-slide="prev">
+									<img src="images/arrow_white_left.png" alt="" width="40">
+									<span class="sr-only">Previous</span>
+								</a>
+								<a href="#testimonial-carousel" class="carousel-control-next" role="button" data-slide="next">
+									<img src="images/arrow_white_right.png" alt="" width="40">
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+						</div>
+					</div>
+			</div>
 		</div>
-		<!-- Most popular tutorials section -->
+
+
+
+		<!-- Section Tutorials -->
 		<div class="container-fluid py-5" id="tutorial-section">
 			<div class="container my-3">
 				<h2 class="font-weight-light text-center mb-5">Most <span class="learn">popular</span> tutorials</h2>
 				<div class="row mx-auto my-auto">
 						<div id="popular-carousel" class="carousel slide w-100" data-ride="carousel">
+								<!-- Carousel slides -->
 								<div class="carousel-inner w-100" role="listbox">
 										<div class="carousel-item active">
 												<div class="col-md-6 col-lg-3">
@@ -253,6 +258,8 @@
 												</div>
 										</div>
 								</div>
+
+								<!-- Carousel controls -->
 								<a class="carousel-control-prev w-auto" href="#popular-carousel" role="button" data-slide="prev">
 										<img src="images/arrow_black_left.png" alt="" width="20">
 										<span class="sr-only">Previous</span>
@@ -263,30 +270,32 @@
 								</a>
 						</div>
 				</div>
+			</div>
 		</div>
-		</div>
-		<!-- Membership section -->
-		<div class="container-fluid membership text-white p-5">
+
+
+		<!-- Section Membership -->
+		<div class="container-fluid bg-section text-white py-5">
 			<div class="container d-flex justify-content-center flex-wrap text-center">
 				<h2 class=" w-100"><span class="learn">Free</span> membership</h2>
 				<div class="row membership-section mt-5 w-100">
-						<div class="col-sm col-md-6 col-lg-3 my-4">
-							<img src="images/smile_on.png" alt="Phillip Massey Icon" width="45px" height="auto">
+						<div class="col-md-6 col-lg-3 d-flex align-items-center flex-column my-5 w-50 mx-auto">
+							<img src="images/smile_on.png" alt="Phillip Massey Icon">
 							<h3 class="h5 mt-3 mb-1 font-weight-bold">Lorem ipsum</h3>
 							<p class="my-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 						</div>
-						<div class="col-sm col-md-6 col-lg-3 my-4">
+						<div class="col-md-6 col-lg-3 d-flex align-items-center flex-column my-5 w-50 mx-auto">
 							<img src="images/smile_on.png" alt="Phillip Massey Icon">
 							<h3 class="h5 mt-3 mb-1 font-weight-bold">Lorem ipsum</h3>
 							<p class="my-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 						</div>
 						<div class="w-100 d-block d-sm-none"></div>
-						<div class="col-sm col-md-6 col-lg-3 my-4">
+						<div class="col-md-6 col-lg-3 d-flex align-items-center flex-column my-5 w-50 mx-auto">
 							<img src="images/smile_on.png" alt="Phillip Massey Icon">
 							<h3 class="h5 mt-3 mb-1 font-weight-bold">Lorem ipsum</h3>
 							<p class="my-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 						</div>
-						<div class="col-sm col-md-6 col-lg-3 my-4">
+						<div class="col-md-6 col-lg-3 d-flex align-items-center flex-column my-5 w-50 mx-auto">
 							<img src="images/smile_on.png" alt="Phillip Massey Icon">
 							<h3 class="h5 mt-3 mb-1 font-weight-bold">Lorem ipsum</h3>
 							<p class="my-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -295,12 +304,15 @@
 					<button class="btn btn-primary rounded-pill px-4 py-2 mt-5 text-uppercase font-weight-bold shadow-lg">Register for Free</button>
 			</div>
 		</div>
-		<!-- Latest videos section -->
+
+
+		<!-- Section videos -->
 		<div class="container-fluid py-5" id="latest-section">
 				<div class="container my-3">
 					<h2 class="font-weight-light text-center mb-5"><span class="learn">Latest</span> videos</h2>
 					<div class="row mx-auto my-auto">
 							<div id="latest-carousel" class="carousel slide w-100" data-ride="carousel">
+									<!-- Carousel slides -->
 									<div class="carousel-inner w-100" role="listbox">
 											<div class="carousel-item active">
 													<div class="col-md-6 col-lg-3">
@@ -407,6 +419,7 @@
 													</div>
 											</div>
 									</div>
+									<!-- Carousel controls -->
 									<a class="carousel-control-prev w-auto" href="#latest-carousel" role="button" data-slide="prev">
 											<img src="images/arrow_black_left.png" alt="" width="20">
 											<span class="sr-only">Previous</span>
@@ -418,19 +431,17 @@
 							</div>
 					</div>
 			</div>
-			</div>
+		</div>
 	</main>
+
+
 	<!-- Footer -->
-	<footer class="font-small text-white">
-
+	<footer class="font-small bg-section text-white">
 		<div class="container-fluid text-center px-5">
-
 			<div class="row align-items-center justify-content-space-between mt-4">
 				<div class="col-sm-3 mr-auto my-4">
 					<a class="navbar-brand text-white font-weight-bold" href="0-homepage.html"><img class="logo-smile mr-2" src="images/smile_off.png"/><img class="logo-smile" src="images/logo.png"/></a>
 				</div>
-
-
 				<div class="col-sm-3 ml-auto">
 					<div class="list-unstyled d-flex justify-content-center my-4">
 						<div>
@@ -464,95 +475,55 @@
 							</span></a>
 						</div>
 					</div>
-
 				</div>
 			</div>
-
 			<div class="text-center py-3 text-secondary"><small>©smileschool 2020</small></div>
 		</div>
-		</footer>
-</div>
+	</footer>
 
 
-<!-- Modal Login -->
-<div id="loginModal" class="modal" tabindex="-1">
-	<div class="modal-dialog modal-dialog-centered">
-	  <div class="modal-content">
-		<div class="modal-header testimonials">
-		  <h5 class="modal-title"> <img class="logo-smile mr-2" src="images/smile_off.png"/><img class="logo-smile" src="images/logologin.png"/></h5>
-		  <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-		  </button>
-		</div>
-		<div class="modal-body">
-			<form>
-				<div class="form-group row">
-				  <label for="staticEmail" class="col-sm-2 col-form-label font-weight-bolder">Email</label>
-				  <div class="col-sm-10">
-					<input type="text" class="form-control-plaintext" id="staticEmail" placeholder="Carlos@example.com">
-				  </div>
-				</div>
-				<div class="form-group row">
-				  <label for="inputPassword" class="col-sm-2 col-form-label font-weight-bolder">Password</label>
-				  <div class="col-sm-10">
-					<input type="password" class="form-control" id="inputPassword">
-				  </div>
-				</div>
-			  </form>
-		</div>
-		<div class="modal-footer">
-		  <button type="button" class="btn p-3 px-5 text-white mx-auto font-weight-bolder">ACCESS</button>
+	<!-- Modal Login -->
+	<div id="loginModal" class="modal" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered">
+		  <div class="modal-content">
+			<div class="modal-header testimonials">
+			  <h5 class="modal-title"> <img class="logo-smile mr-2" src="images/smile_off.png"/><img class="logo-smile" src="images/logologin.png"/></h5>
+			  <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-group row">
+					  <label for="staticEmail" class="col-sm-2 col-form-label font-weight-bolder">Email</label>
+					  <div class="col-sm-10">
+						<input type="text" class="form-control-plaintext" id="staticEmail" placeholder="Carlos@example.com">
+					  </div>
+					</div>
+					<div class="form-group row">
+					  <label for="inputPassword" class="col-sm-2 col-form-label font-weight-bolder">Password</label>
+					  <div class="col-sm-10">
+						<input type="password" class="form-control" id="inputPassword">
+					  </div>
+					</div>
+				  </form>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn p-3 px-5 text-white mx-auto font-weight-bolder">ACCESS</button>
+			</div>
+		  </div>
 		</div>
 	  </div>
-	</div>
-  </div>
 
-	<script type="application/javascript">
-		$('#popular-carousel').carousel({
-  interval: 10000
-})
 
-$('#popular-carousel .carousel-item').each(function(){
-    var minPerSlide = 3;
-    var next = $(this).next();
-    if (!next.length) {
-    next = $(this).siblings(':first');
-    }
-    next.children(':first-child').clone().appendTo($(this));
-    
-    for (var i=0;i<minPerSlide;i++) {
-        next=next.next();
-        if (!next.length) {
-        	next = $(this).siblings(':first');
-      	}
-        
-        next.children(':first-child').clone().appendTo($(this));
-      }
-});
 
-$('#latest-carousel').carousel({
-  interval: 10000
-})
 
-$('#latest-carousel .carousel-item').each(function(){
-    var minPerSlide = 3;
-    var next = $(this).next();
-    if (!next.length) {
-    next = $(this).siblings(':first');
-    }
-    next.children(':first-child').clone().appendTo($(this));
-    
-    for (var i=0;i<minPerSlide;i++) {
-        next=next.next();
-        if (!next.length) {
-        	next = $(this).siblings(':first');
-      	}
-        
-        next.children(':first-child').clone().appendTo($(this));
-      }
-});
-
-	</script>
+</div>
+	<!-- JQuery, Bootstrap, popper and Custom Scripts -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="scripts.js"></script>
 </body>
 
 </html>
